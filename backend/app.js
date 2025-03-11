@@ -1,10 +1,14 @@
 const express = require('express');
 
-const port = process.env.PORT || 3000;
+// Routes
+const indexRouter = require('./routes/index');
 
 
 const app = express();
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+app.use('/', indexRouter);
+
+
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
