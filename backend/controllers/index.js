@@ -1,5 +1,3 @@
-const index = (req, res) => {
+module.exports.index = (req, res, next) => {
     res.send('ProNote Backend API');
 };
-
-module.exports.index = index;
