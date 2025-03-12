@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Notes from "./pages/Notes";
 import Navbar from "./components/Navbar";
-import { NotesProvider} from "./context/NotesProvider"
+import { NotesProvider } from "./context/NotesProvider";
 
-
-function App () {
+function App() {
   return (
     <NotesProvider>
       <Router>

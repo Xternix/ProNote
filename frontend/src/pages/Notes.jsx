@@ -22,9 +22,7 @@ function Notes() {
         value={newNote}
         onChange={(e) => setNewNote(e.target.value)}
       />
-      <button onClick={handleAddNote}>
-         Note
-      </button>
+      <button onClick={handleAddNote}>Note</button>
       <NoteList notes={notes} />
     </div>
   );

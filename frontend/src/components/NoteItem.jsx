@@ -1,6 +1,5 @@
 function NoteItem({ note }) {
-    return <li>{note}</li>;
+  return <li>{note}</li>;
 }
-  
+
 export default NoteItem;
-  
